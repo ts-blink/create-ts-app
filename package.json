@@ -1,0 +1,23 @@
+{
+  "name": "create-ts-app",
+  "version": "1.0.0",
+  "description": "Create ThoughtSpot Frontend app/library scaffolding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ts-blink/create-ts-app.git"
+  },
+  "author": "ashish.shubham@thoughtspot.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ts-blink/create-ts-app/issues"
+  },
+  "homepage": "https://github.com/ts-blink/create-ts-app#readme",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "yargs": "^16.1.0"
+  }
+}

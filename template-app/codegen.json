@@ -1,0 +1,35 @@
+{
+    "schema": [
+        "<insert schema location here>"
+    ],
+    "documents": "src/services/**/*.graphql",
+    "scalars": {
+        "JSON": "{ [key: string]: any }",
+        "GUID": "string"
+    },
+    "generates": {
+        "src/services/generated/schema.graphql": {
+            "plugins": [
+                "schema-ast"
+            ]
+        },
+        "src/services/generated/graphql-types.ts": {
+            "plugins": [
+                "typescript",
+                "typescript-operations",
+                "typescript-react-apollo"
+            ],
+            "config": {
+                "reactApolloVersion": 3,
+                "withComponent": false,
+                "withHOC": false,
+                "withHooks": true
+            }
+        },
+        "custom-typings/graphql-imports.d.ts": {
+            "plugins": [
+                "typescript-graphql-files-modules"
+            ]
+        }
+    }
+}
